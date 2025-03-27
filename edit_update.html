@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>ICTWEB skills project</title>
+  </head>
+  <body>
+	<div class="container">
+		<h2>ICTWEB skills project</h2>
+		<p></p>
+	</div>  
+	<div class="container mx-auto">
+		<!-- add content here -->
+		<form onsubmit="return validateForm()" novalidate>
+			<div class="form-group">
+				<label for="InputEmail">Email address</label>
+				<input type="email" class="form-control form-control-lg" id="InputEmail" placeholder="Enter email here" value="">
+				<div class="invalid-feedback">
+					A valid email address is required!
+				</div>		
+			</div>	
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<!-- javascript for custom form validation -->
+		<script>
+			function validateForm() {
+				var e = "";
+				var validity = true;
+					
+				var emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				var passwordregex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+					
+				e = document.getElementById("InputEmail");
+				e.classList.remove("is-invalid");			
+				if ( (e.value == "") || !emailregex.test(e.value) ) {
+					e.classList.add("is-invalid");
+					validity = false;
+				}
+							
+				return validity;
+			}	
+		</script>		
+	</div>
+  </body>
+</html>
