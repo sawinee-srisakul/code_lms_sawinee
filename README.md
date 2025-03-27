@@ -63,18 +63,22 @@ mysql -u admin_lms_sawinee_srisakul -p lms_sawinee_srisakul < /path/to/code_lms_
 
 ### 6. Set Folder Permissions
 
-- Linux/macOS
+- **Linux/macOS**
 
 ```sh
 cd code_lms_sawinee
 chmod 777 images-cover
 ```
 
-- Windows
-  -- 1.Right-click the images-cover folder and select Properties.
-  -- 2.Go to the Security tab and click Edit.
-  -- 3.Select the user/group and check Allow for Write (or Modify).
-  -- 4.Click OK to apply changes.
+- **Windows**
+
+  1.Right-click the images-cover folder and select Properties.
+
+  2.Go to the Security tab and click Edit.
+
+  3.Select the user/group and check Allow for Write (or Modify).
+
+  4.Click OK to apply changes.
 
 ### 7. Run the Application
 
