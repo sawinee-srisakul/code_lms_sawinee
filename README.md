@@ -7,7 +7,7 @@ A web-based system for Australian University at Gelos Enterprises to manage book
 - User authentication (signup/login)
 - Browse, borrow, return, delete, and edit books
 - Responsive and professional UI
-- Data stored in a relational database (3rd Normal Form compliance)
+- Data stored in a relational database (MySQL)
 
 ## Technologies
 
@@ -72,11 +72,8 @@ chmod 777 images-cover
 
 - Windows
   -- 1.Right-click the images-cover folder and select Properties.
-
   -- 2.Go to the Security tab and click Edit.
-
   -- 3.Select the user/group and check Allow for Write (or Modify).
-
   -- 4.Click OK to apply changes.
 
 ### 7. Run the Application
